@@ -31,7 +31,7 @@ while True:
 			await bot.send_message(message.chat.id, '🙋Здравствуйте')
 		executor.start_polling(dp)
 		print(f'GOOD: {token}')
-    	break
+		break
 		#f = open('text.txt', 'a')
 		#f.write(token + '\n')
 		#f.close()
