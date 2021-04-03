@@ -30,8 +30,10 @@ while True:
 		async def send_welcome(message: types.Message):
 			await bot.send_message(message.chat.id, '🙋Здравствуйте')
 		executor.start_polling(dp)
-		f = open('text.txt', 'a')
-		f.write(token + '\n')
-		f.close()
+		print(f'GOOD: {token}')
+    	break
+		#f = open('text.txt', 'a')
+		#f.write(token + '\n')
+		#f.close()
 	except Exception as e:
 		print('- ' + token + ' ' + str(e))
